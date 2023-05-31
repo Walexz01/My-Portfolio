@@ -1,3 +1,4 @@
+import hero__img from "../assets/IMG_i8ax5q-PhotoRoom.png";
 const Hero = () => {
   return (
     <section className="hero__section">
@@ -24,7 +25,9 @@ const Hero = () => {
           </div>
         </div>
         {/* ============== left ends ======== */}
-        <div className="hero__right">my img</div>
+        <div className="hero__right">
+          <img src={hero__img} alt="" />
+        </div>
       </div>
     </section>
   );
