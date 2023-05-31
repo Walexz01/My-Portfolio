@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 
-const Headr = () => {
+const Header = () => {
   return (
     <>
       <Navbar />
@@ -10,4 +10,4 @@ const Headr = () => {
   );
 };
 
-export default Headr;
+export default Header;

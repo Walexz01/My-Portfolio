@@ -190,64 +190,76 @@ section{
   }
   /* ================ hero section start ========  */
   .hero__container{
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
+    gap: 1rem;
     padding: 3rem 0 1rem 0;
   }
   .hero__contents{
     text-align: left;
   }
   .hero__greeting{
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
   }
-  .name{
-    background: linear-gradient(60deg ,var(--color__primary),var(--color__secondary));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
   .little__intro{
-    font-size: 1.2rem;
-    color: rgba(27, 27, 27, 0.596);
-    padding: 2rem 0;
+    font-size: 1.1rem;
+    padding: 1.2rem 0;
   }
   .ctns{
     padding: 1rem 0;
-  }
-  .btn{
-    padding: .7rem 2rem;
-    border-radius: 1.2rem;
-    outline: none;
-    font-size: 1rem;
-    background-color: transparent;
-    margin-right: .4rem;
-    border: 1px solid black;
-  }
-  .btn a{
-    color: black;
-    font-weight: 600;
-  
-  }
-  .get_in_touch{
-    background: linear-gradient(var(--color__primary),var(--color__secondary));
-    border: 1px solid white;
-    transition: all .5s ease-in;
-    
-  }
-  .get_in_touch:hover{
-    background: transparent;
-    border: 1px solid var(--color__primary);
-  }
-  .view_all_works:hover{
-    background: linear-gradient(var(--color__primary),var(--color__secondary));
-    border: 1px solid white;
-    transition: all .5s ease-in;
-  
   }
   .hero__right img{
     width: 100%;
   }
   
+}
+
+
+/* ============= media query for 768px screen =============== */
+@media (max-width : 425px) {
+  section{
+    padding: 4rem 1rem;
+  }
+  .container{
+    width: 97%;
+  }
+  
+  .nav__logo{
+    font-size: 1.2rem;
+  }
+
+/* ================ hero section start ========  */
+.hero__container{
+  grid-template-columns: 1fr ;
+  gap: 1rem;
+  align-items: center;
+  padding: 3rem 0 1rem 0;
+}
+.hero__contents{
+  text-align: center;
+}
+.hero__greeting{
+  font-size: 2.4rem;
+}
+.little__intro{
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+.ctns{
+  padding: 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.btn{
+  font-size: .9rem;
+  margin-right: 0rem;
+}
+.hero__right img{
+  width: 100%;
+}
+
+
+
+
 }
