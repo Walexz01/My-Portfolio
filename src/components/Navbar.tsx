@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const Navbar = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <nav className="nav">
       <div className="nav__container">
@@ -6,7 +9,7 @@ const Navbar = () => {
           <div className="nav__logo">
             Walexz<span className="sub">.com</span>
           </div>
-          <ul className="nav__links">
+          <ul className={isNavOpen ? "nav__links open" : "nav__links"}>
             <li className="nav__link">
               <a href="">Home</a>
             </li>
@@ -23,6 +26,9 @@ const Navbar = () => {
               <a href="">Contacts</a>
             </li>
           </ul>
+          <div className="toggle__btn" onClick={() => setIsNavOpen(!isNavOpen)}>
+            {isNavOpen ? "close" : "open"}
+          </div>
         </div>
       </div>
     </nav>

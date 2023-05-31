@@ -23,7 +23,7 @@ section{
 }
 /* ================= NAvBar style ==================== */
 .nav{
-  background: rgba(0, 0, 0, 0.856);
+  background: rgb(32, 33, 36);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@ section{
 }
 .nav__container{
   width: 80%;
-  padding: .7rem;
+  padding: 1rem .7rem;
 }
 .nav__items{
   display: flex;
@@ -53,20 +53,25 @@ section{
 .nav__links{
   display: flex;
   gap: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .nav__link a{
   color: whitesmoke;
 
 }
-
+.nav__link a:hover{
+  color: var(--color__secondary);
+}
+.toggle__btn{
+  display: none;
+}
 /* ================ hero section start ========  */
 .hero__container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 0 1rem 0;
 }
 .hero__contents{
   text-align: left;
@@ -87,12 +92,14 @@ section{
 }
 .ctns{
   padding: 1rem 0;
+  display: flex;
 }
 .btn{
   padding: .7rem 2rem;
   border-radius: 1.2rem;
   outline: none;
   font-size: 1rem;
+  white-space: nowrap;
   background-color: transparent;
   margin-right: .4rem;
   border: 1px solid black;
@@ -120,4 +127,127 @@ section{
 }
 .hero__right img{
   width: 100%;
+}
+
+
+
+/* ============= media query for 768px screen =============== */
+@media (max-width : 768px) {
+  section{
+    padding: 3rem 1rem;
+  }
+  .container{
+    width: 90%;
+  }
+  /* ================= NAvBar style ==================== */
+  .nav__container{
+    width: 90%;
+    padding: .7rem .5rem;
+  }
+  .nav__logo{
+    font-size: 1.7rem;
+  }
+  .nav__links{
+    flex-direction: column;
+    background-color: rgb(32, 33, 36);
+    position: absolute;
+    right: 0;
+    top: 100%;
+    gap: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    display: none;
+
+  }
+  .nav__link{
+    background: transparent;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all .5s ease-in;
+    margin: .2rem  0;
+
+  }
+  .nav__link:hover{
+    background: var(--color__secondary);
+    width: 80%;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .nav__link a:hover{
+    color: black;
+  }
+  .toggle__btn{
+    display: flex;
+  }
+  .open{
+    display: flex;
+  }
+  /* ================ hero section start ========  */
+  .hero__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    padding: 3rem 0 1rem 0;
+  }
+  .hero__contents{
+    text-align: left;
+  }
+  .hero__greeting{
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  .name{
+    background: linear-gradient(60deg ,var(--color__primary),var(--color__secondary));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .little__intro{
+    font-size: 1.2rem;
+    color: rgba(27, 27, 27, 0.596);
+    padding: 2rem 0;
+  }
+  .ctns{
+    padding: 1rem 0;
+  }
+  .btn{
+    padding: .7rem 2rem;
+    border-radius: 1.2rem;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    margin-right: .4rem;
+    border: 1px solid black;
+  }
+  .btn a{
+    color: black;
+    font-weight: 600;
+  
+  }
+  .get_in_touch{
+    background: linear-gradient(var(--color__primary),var(--color__secondary));
+    border: 1px solid white;
+    transition: all .5s ease-in;
+    
+  }
+  .get_in_touch:hover{
+    background: transparent;
+    border: 1px solid var(--color__primary);
+  }
+  .view_all_works:hover{
+    background: linear-gradient(var(--color__primary),var(--color__secondary));
+    border: 1px solid white;
+    transition: all .5s ease-in;
+  
+  }
+  .hero__right img{
+    width: 100%;
+  }
+  
 }
