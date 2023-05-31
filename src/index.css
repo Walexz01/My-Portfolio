@@ -10,8 +10,12 @@
 }
 a{
   text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
-
+svg{
+  font-size: 1.5rem;
+}
 section{
   padding: 5rem 3rem;
   display: flex;
@@ -65,6 +69,10 @@ section{
 .toggle__btn{
   display: none;
 }
+.toggle__btn svg{
+  color: white;
+  font-size: 2rem;
+}
 /* ================ hero section start ========  */
 .hero__container{
   display: grid;
@@ -103,19 +111,22 @@ section{
   background-color: transparent;
   margin-right: .4rem;
   border: 1px solid black;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
 }
 .btn a{
   color: black;
   font-weight: 600;
 
 }
-.get_in_touch{
+.btn__colored{
   background: linear-gradient(var(--color__primary),var(--color__secondary));
   border: 1px solid white;
   transition: all .5s ease-in;
   
 }
-.get_in_touch:hover{
+.btn__colored:hover{
   background: transparent;
   border: 1px solid var(--color__primary);
 }
@@ -129,8 +140,110 @@ section{
   width: 100%;
 }
 
+/* =========== aboutt section ============ */
+.heading{
+  text-align: center;
+  color: rgba(12, 11, 11, 0.966);
+  padding-bottom: 2rem;
+}
+.heading h2{
+  font-size: 2.7rem;
+  padding-bottom: .7rem;
+}
+.heading p{
+  font-size: 1.5rem;
+}
+.about__contents{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.about__left img{
+  width: 100%;
+  height: 80%;
+}
+.about__right{
+padding-top: 2rem;
+}
+.about__right--content h3{
+  font-size: 1.5rem;
+}
+.about__contents p{
+  font-size: 1.2rem;
+  padding: .5rem 0 .7rem 0;
+}
+.details__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.detail{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin:0 0 .8rem 0;
+  gap: .3rem;
+}
+.detail h3{
+  font-size: 1.2rem;
+}
+.detail span{
+  font-size: 1.2rem;
+}
+/* ============= media query for 1024px screen =============== */
+@media (max-width : 1024px) {
+  /* =========== aboutt section ============ */
+.heading{
+  padding-bottom: 1.5rem;
+}
+.heading h2{
+  font-size: 2.4rem;
+  padding-bottom: .4rem;
+}
+.heading p{
+  font-size: 1.3rem;
+}
+.about__contents{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+.about__left img{
+  width: 100%;
+  height: 80%;
+}
+.about__right{
+padding-top: .3rem;
+}
+.about__right--content h3{
+  font-size: 1.3rem;
+}
+.about__contents p{
+  font-size: 1.1rem;
+}
+.details__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: .5rem;
+}
+.detail{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin:0 0 .5rem 0;
+}
+.detail h3{
+  font-size: 1.1rem;
+}
+.detail span{
+  font-size: 1.1rem;
+}
 
-
+}
 /* ============= media query for 768px screen =============== */
 @media (max-width : 768px) {
   section{
@@ -211,12 +324,54 @@ section{
   .hero__right img{
     width: 100%;
   }
-  
+  /* =========== aboutt section ============ */
+.heading{
+  padding-bottom: 1rem;
+}
+.heading h2{
+  font-size: 2rem;
+  padding-bottom: .3rem;
+}
+.heading p{
+  font-size: 1.3rem;
+}
+.about__contents{
+  grid-template-columns: 1fr ;
+  gap: 1rem;
+}
+.about__left img{
+  width: 100%;
+  height: 100%;
+}
+.about__right{
+padding-top: 0rem;
+}
+.about__right--content h3{
+  font-size: 1.3rem;
+}
+.about__contents p{
+  font-size: 1.1rem;
+  padding: .3rem 0 .5rem 0;
+}
+.details__container{
+  grid-template-columns: 1fr 1fr;
+  padding: .5rem 0;
+}
+.detail{
+  margin:0 0 .5rem 0;
+}
+.detail h3{
+  font-size: 1.1rem;
+}
+.detail span{
+  font-size: 1.1rem;
+}
+
 }
 
 
-/* ============= media query for 768px screen =============== */
-@media (max-width : 425px) {
+/* ============= media query for 600px screen =============== */
+@media (max-width : 600px) {
   section{
     padding: 4rem 1rem;
   }
@@ -258,7 +413,39 @@ section{
 .hero__right img{
   width: 100%;
 }
-
+/* =========== aboutt section ============ */
+.heading{
+  padding-bottom: .7rem;
+}
+.heading h2{
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+.heading p{
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.about__right--content h3{
+  font-size: 1.3rem;
+}
+.about__contents p{
+  font-size: 1.2rem;
+  padding: .3rem 0 .4rem 0;
+}
+.details__container{
+  grid-template-columns: 1fr ;
+  gap: .5rem;
+  padding-bottom: .5rem;
+}
+.detail{
+  margin:0 0 .7rem 0;
+}
+.detail h3{
+  font-size: 1.1rem;
+}
+.detail span{
+  font-size: 1.1rem;
+}
 
 
 

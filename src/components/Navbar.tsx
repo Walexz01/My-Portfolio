@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { GoThreeBars } from "react-icons/go";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -27,7 +29,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="toggle__btn" onClick={() => setIsNavOpen(!isNavOpen)}>
-            {isNavOpen ? "close" : "open"}
+            {isNavOpen ? <AiOutlineClose /> : <GoThreeBars />}
           </div>
         </div>
       </div>
