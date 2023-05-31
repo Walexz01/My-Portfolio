@@ -6,7 +6,16 @@
 }
 a{
   text-decoration: none;
-  color: whitesmoke;
+}
+
+section{
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 80%;
 }
 /* ================= NAvBar style ==================== */
 .nav{
@@ -15,6 +24,11 @@ a{
   align-items: center;
   justify-content: center;
   color: whitesmoke;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .nav__container{
   width: 80%;
@@ -36,4 +50,49 @@ a{
   gap: 2rem;
   font-size: 1.2rem;
 }
+.nav__link a{
+  color: whitesmoke;
 
+}
+
+/* ================ hero section start ========  */
+.hero__section{
+  /* background: rgba(231, 228, 222, 0.788); */
+}
+.hero__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 7rem 0;
+}
+.hero__contents{
+  text-align: left;
+}
+.hero__greeting{
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.little__intro{
+  font-size: 1.2rem;
+  color: rgba(27, 27, 27, 0.596);
+  padding: 2rem 0;
+}
+.btn{
+  padding: .7rem 2rem;
+  border-radius: 1.2rem;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+  margin-right: .4rem;
+  border: 1px solid black;
+}
+.btn a{
+  color: black;
+  font-weight: 600;
+
+}
+.get_in_touch{
+  background: linear-gradient(purple,orange);
+  border: 1px solid transparent;
+}
