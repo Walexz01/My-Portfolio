@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+/* ================= NAvBar style ==================== */
+.nav{
+  background: rgba(0, 0, 0, 0.856);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+.nav__container{
+  width: 80%;
+  padding: .7rem;
+}
+.nav__items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logo{
+  font-size: 2rem;
+}
+.sub{
+  font-size: .7rem;
+}
+.nav__links{
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
