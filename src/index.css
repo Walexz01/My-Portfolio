@@ -88,7 +88,7 @@ section{
   font-size: 3rem;
   line-height: 1.2;
 }
-.name{
+.gradient__text{
   background: linear-gradient(60deg ,var(--color__primary),var(--color__secondary));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -163,7 +163,7 @@ section{
   height: 80%;
 }
 .about__right{
-padding-top: 2rem;
+padding-top: .5rem;
 }
 .about__right--content h3{
   font-size: 1.5rem;

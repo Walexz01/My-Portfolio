@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
+import { Links } from "../Data/NavLinks";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,21 +13,11 @@ const Navbar = () => {
             Walexz<span className="sub">.com</span>
           </div>
           <ul className={isNavOpen ? "nav__links open" : "nav__links"}>
-            <li className="nav__link">
-              <a href="">Home</a>
-            </li>
-            <li className="nav__link">
-              <a href="">About</a>
-            </li>
-            <li className="nav__link">
-              <a href="">Services</a>
-            </li>
-            <li className="nav__link">
-              <a href="">Projects</a>
-            </li>
-            <li className="nav__link">
-              <a href="">Contacts</a>
-            </li>
+            {Links.map(({ id, name }) => (
+              <li className="nav__link" key={id}>
+                <a href="">{name}</a>
+              </li>
+            ))}
           </ul>
           <div className="toggle__btn" onClick={() => setIsNavOpen(!isNavOpen)}>
             {isNavOpen ? <AiOutlineClose /> : <GoThreeBars />}

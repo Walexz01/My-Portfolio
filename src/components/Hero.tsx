@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hero__left">
           <div className="hero__contents">
             <h2 className="hero__greeting">
-              Hello, <span className="name">I'm Adewale,</span>
+              Hello, <span className="name gradient__text">I'm Adewale,</span>
               Web Developer based in Nigeria.
             </h2>
             <div className="little__intro">
