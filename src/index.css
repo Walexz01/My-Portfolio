@@ -199,6 +199,33 @@ padding-top: 2rem;
   justify-content: center;
   gap: 1rem;
 }
+/* ===================== services section ======================= */
+.services{
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.service{
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0px 0px 6px black;
+}
+.service__img{
+  margin-bottom: 1rem;
+  width: 50px;
+}
+.service__heading{
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+}
+.service__desc{
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
 /* ============= media query for 1024px screen =============== */
 @media (max-width : 1024px) {
   /* =========== aboutt section ============ */
@@ -248,6 +275,21 @@ padding-top: .3rem;
 }
 .detail span{
   font-size: 1.1rem;
+}
+/* ===================== services section ======================= */
+.services{
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.service{
+  text-align: left;
+}
+.service__heading{
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+}
+.service__desc{
+  font-size: 1.2rem;
 }
 
 }
@@ -453,6 +495,23 @@ padding-top: 0rem;
 .detail span{
   font-size: 1.1rem;
 }
+/* ===================== services section ======================= */
+.services{
+  gap: 2rem;
+  grid-template-columns:  .9fr;
+}
+.service{
+  padding: 2rem 1.5rem;
+}
+.service__heading{
+  font-size: 1.2rem;
+}
+.service__desc{
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+
 
 
 
