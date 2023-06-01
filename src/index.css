@@ -192,6 +192,13 @@ padding-top: 2rem;
 .detail span{
   font-size: 1.2rem;
 }
+/* ========================== skills section================ */
+.skills__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
 /* ============= media query for 1024px screen =============== */
 @media (max-width : 1024px) {
   /* =========== aboutt section ============ */
@@ -413,16 +420,16 @@ padding-top: 0rem;
 .hero__right img{
   width: 100%;
 }
-/* =========== aboutt section ============ */
+/* =========== about section ============ */
 .heading{
   padding-bottom: .7rem;
 }
 .heading h2{
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding-bottom: .5rem;
 }
 .heading p{
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   padding-bottom: 1rem;
 }
 .about__right--content h3{
