@@ -280,6 +280,9 @@ padding-top: .5rem;
   line-height: 1.4;
 }
 .project__action__btn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
   padding: 0 1rem;
 }
 
@@ -355,6 +358,28 @@ padding-top: .3rem;
 .service__desc{
   font-size: 1.2rem;
 }
+
+/* ================== projects section ====================== */
+.projects__card__container{
+  gap: 2rem 1rem ;
+  grid-template-columns: repeat(2,1fr);
+}
+.project__details{
+  padding: .5rem 0 .7rem .7rem;
+}
+.project__name{
+  font-size: 1.3rem;
+  padding-bottom: .2rem;
+
+}
+.project__about {
+  font-size: 1rem;
+}
+.project__action__btn{
+  padding: 0 .7rem;
+}
+
+
 
 }
 /* ============= media query for 768px screen =============== */
@@ -480,6 +505,28 @@ padding-top: 0rem;
   font-size: 1.1rem;
 }
 
+/* ================== projects section ====================== */
+.projects__card__container{
+  gap: 1rem;
+}
+.project__details{
+  padding: .3rem 0 1rem .5rem;
+}
+.project__name{
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+.project__about {
+  font-size: 1rem;
+}
+.project__action__btn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: 0 .5rem;
+}
+
+
 }
 
 
@@ -573,6 +620,27 @@ padding-top: 0rem;
 .service__desc{
   font-size: 1.2rem;
   line-height: 1.4;
+}
+
+/* ================== projects section ====================== */
+.projects__card__container{
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.project__details{
+  padding: 1rem 0 1rem .7rem;
+}
+.project__name{
+  font-size: 1.2rem;
+  padding-bottom: .3rem;
+
+}
+.project__about {
+  font-size: 1.1rem;
+}
+
+.project__action__btn{
+  padding: 0 .7rem;
 }
 
 

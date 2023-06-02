@@ -16,7 +16,7 @@ const Projectcard = ({
         <h3 className="project__name ">{name}</h3>
         <p className="project__about">{details}</p>
       </div>
-      <div className="project__action__btn">
+      <div className="project__action__btn ">
         {githubLinnk && (
           <button className="color__hover__btn btn">
             <VscGithub />

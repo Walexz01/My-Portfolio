@@ -12,15 +12,18 @@ const Projects = () => {
           desc="Here are some of the projects have worked on"
         />
         <div className="projects__card__container">
-          {projects.map(({ image, name, details, githubLinnk, siteLink }) => (
-            <Projectcard
-              image={image}
-              name={name}
-              details={details}
-              githubLinnk={githubLinnk}
-              siteLink={siteLink}
-            />
-          ))}
+          {projects.map(
+            ({ image, name, details, githubLinnk, siteLink }, index) => (
+              <Projectcard
+                key={index}
+                image={image}
+                name={name}
+                details={details}
+                githubLinnk={githubLinnk}
+                siteLink={siteLink}
+              />
+            )
+          )}
         </div>
       </div>
     </section>
