@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import Heading from "./Heading";
 const About = () => {
   return (
-    <section className="about__section">
+    <section className="about__section" id="about">
       <div className="container about__container">
         <Heading
           classname="about__heading"

@@ -4,7 +4,7 @@ import { projects } from "../Data/Projects";
 
 const Projects = () => {
   return (
-    <section className="projects__section">
+    <section className="projects__section" id="projects">
       <div className="container projects__container">
         <Heading
           classname="projects__heading"

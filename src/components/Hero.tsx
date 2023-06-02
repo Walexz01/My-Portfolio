@@ -1,7 +1,7 @@
 import hero__img from "../assets/IMG_i8ax5q-PhotoRoom.png";
 const Hero = () => {
   return (
-    <section className="hero__section">
+    <section className="hero__section" id="home">
       <div className="container hero__container">
         {/* ====== left start ======= */}
         <div className="hero__left">

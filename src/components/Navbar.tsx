@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
 import { Links } from "../Data/NavLinks";
@@ -9,13 +10,13 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav__container">
         <div className="nav__items">
-          <div className="nav__logo">
+          <AnchorLink href="#home" className="nav__logo">
             Walexz<span className="sub">.com</span>
-          </div>
+          </AnchorLink>
           <ul className={isNavOpen ? "nav__links open" : "nav__links"}>
             {Links.map(({ id, name }) => (
               <li className="nav__link" key={id}>
-                <a href="">{name}</a>
+                <AnchorLink href={`#${id}`}>{name}</AnchorLink>
               </li>
             ))}
           </ul>

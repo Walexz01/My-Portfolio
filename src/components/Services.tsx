@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 const Services = () => {
   return (
-    <section className="services__section">
+    <section className="services__section" id="services">
       <div className="container services__container">
         <Heading classname="services__heading" title="My Services" />
         <div className="services">

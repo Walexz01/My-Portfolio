@@ -31,7 +31,7 @@ const Contact = () => {
     console.log("submitted");
   };
   return (
-    <section className="contact__section">
+    <section className="contact__section" id="contact">
       <div className="container contact__container">
         <Heading
           classname="contact__heading"

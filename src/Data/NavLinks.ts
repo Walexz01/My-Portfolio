@@ -21,7 +21,7 @@ export const Links:link[] =[
         name:'Projects'
     },
     {
-        id:'contacts',
+        id:'contact',
         name:'contact'
     }
 
