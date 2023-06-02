@@ -18,7 +18,7 @@ const Hero = () => {
               <button className="btn__colored btn">
                 <a href=""> Get In Touch</a>
               </button>
-              <button className="view_all_works btn">
+              <button className="color__hover__btn btn">
                 <a href="">View All Works</a>
               </button>
             </div>

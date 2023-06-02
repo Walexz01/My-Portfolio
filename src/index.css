@@ -7,10 +7,18 @@
 :root{
   --color__primary: #E21143;
   --color__secondary: #FFB03A;
+  --color__l_black:#001219;
+  --color__black-100: #343a40
+}
+h1,h2,h3,h4,h5,h6{
+  color: var(--color__l_black);
+}
+p,span{
+  color: var(--color__black-100);
 }
 a{
   text-decoration: none;
-  color: black;
+  color: 001219;
   font-weight: 600;
 }
 svg{
@@ -27,7 +35,7 @@ section{
 }
 /* ================= NAvBar style ==================== */
 .nav{
-  background: rgb(32, 33, 36);
+  background: var(--color__l_black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +103,7 @@ section{
 }
 .little__intro{
   font-size: 1.2rem;
-  color: rgba(27, 27, 27, 0.596);
+  color: var(--color__black-100);
   padding: 2rem 0;
 }
 .ctns{
@@ -108,17 +116,21 @@ section{
   outline: none;
   font-size: 1rem;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: white;
+
   margin-right: .4rem;
-  border: 1px solid black;
+  border: 1px solid var(--color__l_black);
   display: inline-flex;
   align-items: center;
   gap: .4rem;
 }
 .btn a{
-  color: black;
+  color: var(--color__l_black);
   font-weight: 600;
 
+}
+.btn svg{
+  font-size: 19px;
 }
 .btn__colored{
   background: linear-gradient(var(--color__primary),var(--color__secondary));
@@ -130,7 +142,7 @@ section{
   background: transparent;
   border: 1px solid var(--color__primary);
 }
-.view_all_works:hover{
+.color__hover__btn:hover{
   background: linear-gradient(var(--color__primary),var(--color__secondary));
   border: 1px solid white;
   transition: all .5s ease-in;
@@ -143,8 +155,8 @@ section{
 /* =========== aboutt section ============ */
 .heading{
   text-align: center;
-  color: rgba(12, 11, 11, 0.966);
   padding-bottom: 2rem;
+  font-family: cursive;
 }
 .heading h2{
   font-size: 2.7rem;
@@ -200,6 +212,9 @@ padding-top: .5rem;
   gap: 1rem;
 }
 /* ===================== services section ======================= */
+.services__section{
+  background: var(--color__l_black);;
+}
 .services{
   display: grid;
   justify-content: center;
@@ -207,11 +222,16 @@ padding-top: .5rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .service{
-  border: 1px solid black;
+  border: 2px solid transparent ;
   text-align: left;
+  background-color: white;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
-  box-shadow: 0px 0px 6px black;
+  border: 2px solid #9b2226 ;
+  transition: all .5s ease-in;
+}
+.service:hover{
+  box-shadow: 2px 3px 4px #ae2012;
 }
 .service__img{
   margin-bottom: 1rem;
@@ -226,6 +246,50 @@ padding-top: .5rem;
   line-height: 1.4;
 }
 
+/* ================== projects section ====================== */
+.projects__card__container{
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+.projects__card{
+  background-color: var(--color__l_black);
+  border-radius: 2rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  box-shadow: 1px 1px 9px 2px rgba(0,0,0,0.75);
+  
+}
+.projects__card img{
+  width: 100%;
+}
+.project__details{
+  padding: 1rem 0 1rem 1rem;
+}
+.project__name{
+  font-size: 1.4rem;
+  padding-bottom: .5rem;
+  color: #fafaff;
+  font-family: cursive;
+
+}
+.project__about {
+  color: #e9e9e9;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.project__action__btn{
+  padding: 0 1rem;
+}
+
+.visit__btn:hover{
+  background-color: white;
+}
+.visit__btn:hover a,.visit__btn:hover svg{
+  color: var(--color__l_black);
+
+}
 /* ============= media query for 1024px screen =============== */
 @media (max-width : 1024px) {
   /* =========== aboutt section ============ */
