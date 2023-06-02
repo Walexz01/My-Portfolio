@@ -1,6 +1,5 @@
 import Heading from "./Heading";
 import Projectcard from "./Projectcard";
-import project1 from "../assets/localhost_5173_ (1).png";
 import { projects } from "../Data/Projects";
 
 const Projects = () => {
@@ -8,6 +7,7 @@ const Projects = () => {
     <section className="projects__section">
       <div className="container projects__container">
         <Heading
+          classname="projects__heading"
           title="Project"
           desc="Here are some of the projects have worked on"
         />

@@ -293,6 +293,69 @@ padding-top: .5rem;
   color: var(--color__l_black);
 
 }
+
+/*=====================  contact section ================== */
+.contact__section{
+  background-color: var(--color__l_black);
+  color: white;
+}
+.contact__form{
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.contact__form input,.contact__form textarea{
+  width: 100%;
+  height: 50px;
+  border-radius: 2rem;
+  padding: 1rem;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid var(--color__secondary);
+  font-family: cursive;
+}
+.contact__form textarea{
+  height: 200px;
+  resize: none;
+}
+.contact__heading p{
+  color: white;
+
+}
+.contact__bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.contact__head{
+  font-size: 1.5rem;
+}
+.contact__intro{
+  padding: .6rem 0;
+  font-size: 1.1rem;
+  color: white;
+}
+.contact__links{
+  padding: 1rem 0;
+}
+.contact_link{
+  padding-bottom: .7rem ;
+}
+.contact_link svg{
+  color: #9b2226;
+  padding-right: .2rem;
+}
+.contact_link h3{
+  color: white;
+}
+.contact_link span a{
+  color: #bfbec2;
+}
 /* ============= media query for 1024px screen =============== */
 @media (max-width : 1024px) {
   /* =========== aboutt section ============ */
@@ -527,6 +590,35 @@ padding-top: 0rem;
 }
 
 
+/*=====================  contact section ================== */
+.contact__form{
+  padding:1rem .2rem;
+  gap: 1rem;
+}
+.contact__form input,.contact__form textarea{
+  height: 50px;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.contact__form textarea{
+  height: 200px;
+}
+.contact__bottom{
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.contact__head{
+  text-align: center;
+}
+.contact__links{
+  padding: .7rem 0;
+}
+.contact_link{
+  padding-bottom: .5rem ;
+}
+.send__btn{
+  align-self: center;
+}
 }
 
 

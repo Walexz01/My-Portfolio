@@ -6,7 +6,11 @@ const About = () => {
   return (
     <section className="about__section">
       <div className="container about__container">
-        <Heading title="About Me" desc="Main informations about me" />
+        <Heading
+          classname="about__heading"
+          title="About Me"
+          desc="Main informations about me"
+        />
         <div className="about__contents">
           <div className="about__left">
             <img src={about_image} alt="" />

@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section className="services__section">
       <div className="container services__container">
-        <Heading title="My Services" />
+        <Heading classname="services__heading" title="My Services" />
         <div className="services">
           {services.map(({ image, heading, desc }, index) => (
             <Servicecard

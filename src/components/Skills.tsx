@@ -6,6 +6,7 @@ const Skills = () => {
     <section className="skills__section">
       <div className="container skill__container">
         <Heading
+          classname="skills__heading"
           title="My Skills"
           desc="I have extensive experience with technologies like React, JavaScript, BootstrapCss and others"
         />
