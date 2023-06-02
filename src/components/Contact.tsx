@@ -1,9 +1,8 @@
 import Heading from "./Heading";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { HiMail } from "react-icons/hi";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsFillSendFill } from "react-icons/bs";
 import { useState } from "react";
+import { lists } from "../Data/contacts";
+import Contactlink from "./ContactLink";
 
 interface UserInput {
   name: string;
@@ -11,6 +10,7 @@ interface UserInput {
   subject: string;
   message: string;
 }
+
 type input_event =
   | React.ChangeEvent<HTMLInputElement>
   | React.ChangeEvent<HTMLTextAreaElement>;
@@ -22,9 +22,11 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+
   const handleInput = (e: input_event) => {
     setinput({ ...input, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(input);
@@ -94,27 +96,15 @@ const Contact = () => {
             </p>
 
             <div className="contact__links">
-              <div className="contact_link detail">
-                <BsFillTelephoneFill />
-                <h3>Phone:</h3>
-                <span>
-                  <a href="tel:+2348145439490">+2348145439490</a>
-                </span>
-              </div>
-              <div className="contact_link detail">
-                <HiMail />
-                <h3>Gmail:</h3>
-                <span>
-                  <a href="mailto:walexz1937@gmail.com">walexz1937@gmail.com</a>
-                </span>
-              </div>
-              <div className="contact_link detail">
-                <AiFillTwitterCircle />
-                <h3>Twitter:</h3>
-                <span>
-                  <a href="">walexz1937</a>
-                </span>
-              </div>
+              {lists.map(({ icon, href, title, value }, index) => (
+                <Contactlink
+                  key={index}
+                  href={href}
+                  icon={icon}
+                  title={title}
+                  value={value}
+                />
+              ))}
             </div>
           </div>
         </div>
