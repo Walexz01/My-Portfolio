@@ -356,6 +356,39 @@ padding-top: .5rem;
 .contact_link span a{
   color: #bfbec2;
 }
+
+/* ======================= Footer ================= */
+.footer__container{
+  text-align: center;
+}
+.footer__logo{
+  font-size: 3rem;
+  font-weight: 600 ;
+}
+.footer__logo span{
+  font-size: 2rem;
+}
+.bottom__nav{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.bottom__nav__link a{
+  color: #001219;
+  font-size: 1.4rem;
+
+}
+.bottom__nav__link a:hover{
+  color: var(--color__secondary);
+
+}
+.end{
+  font-size: 1.5rem;
+  color: #001219;
+}
+
 /* ============= media query for 1024px screen =============== */
 @media (max-width : 1024px) {
   /* =========== aboutt section ============ */
@@ -619,6 +652,24 @@ padding-top: 0rem;
 .send__btn{
   align-self: center;
 }
+
+/* ======================= Footer ================= */
+.footer__logo{
+  font-size: 2,5rem;
+}
+.footer__logo span{
+  font-size: 1.5rem;
+}
+.bottom__nav__link a{
+  font-size: 1.2rem;
+
+}
+.end{
+  font-size: 1.2rem;
+  color: #001219;
+}
+
+
 }
 
 
@@ -733,6 +784,25 @@ padding-top: 0rem;
 
 .project__action__btn{
   padding: 0 .7rem;
+}
+
+/* ======================= Footer ================= */
+.footer__logo{
+  font-size: 2rem;
+}
+.footer__logo span{
+  font-size: 1.5rem;
+}
+.bottom__nav{
+  gap: 1rem;
+  flex-direction: column;
+}
+.bottom__nav__link a{
+  font-size: 1.2rem;
+
+}
+.end{
+  font-size: 1.2rem;
 }
 
 
