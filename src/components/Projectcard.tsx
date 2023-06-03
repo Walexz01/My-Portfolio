@@ -26,7 +26,9 @@ const Projectcard = ({
         {siteLink && (
           <button className="btn__colored btn visit__btn">
             <BsLink45Deg />
-            <a href={siteLink}> Visit</a>
+            <a target="blank" href={siteLink}>
+              Visit
+            </a>
           </button>
         )}{" "}
       </div>

@@ -1,4 +1,11 @@
 import project1 from '../assets/localhost_5173_ (1).png'
+import piggyvest from '../assets/Projects/piggyvest.png'
+import herobank from '../assets/Projects/herosbanks.png'
+import corelink from '../assets/Projects/corelink.png'
+import tours from '../assets/Projects/tours.png'
+import fifash from '../assets/Projects/fifash.png'
+import trippy from '../assets/Projects/trippy.png'
+import foodarena from '../assets/Projects/foodarena.png'
 
 export interface Project {
     image: string;
@@ -11,45 +18,48 @@ export interface Project {
 
 export const projects:Project[]=[
     {
-        image:project1,
-        name:"My portfolio",
-        details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fuga mollitia, unde facilis voluptates ea quos sapiente commodi exercitationem.',
-        githubLinnk:'jjj',
-        siteLink:'jjhj'
+        image:piggyvest,
+        name:"Piggyvest Clone ",
+        details: 'This is a clonne of the piggyvest, I cloned some pages of the site like the home page, invest page and stories page .',
+        githubLinnk:'https://github.com/Walexz01/piggyvest',
+        siteLink:'https://piggyvest-henna.vercel.app/'
     },
     {
-        image:project1,
-        name:"My portfolio",
+        image:herobank,
+        name:"Hero's bank",
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fuga mollitia, unde facilis voluptates ea quos sapiente commodi exercitationem.',
-        githubLinnk:'jjj',
-        siteLink:'jjhj'
+        githubLinnk:'https://github.com/Walexz01/heros-banks',
+        siteLink:'https://walexz01.github.io/heros-banks/'
     },
     {
-        image:project1,
+        image:corelink,
         name:"hero back",
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fuga mollitia, unde facilis voluptates ea quos sapiente commodi exercitationem.',
-        githubLinnk:'jjj',
-        siteLink:'jjhj'
+        githubLinnk:'https://github.com/Walexz01/corelink',
+        siteLink:'https://corelink.vercel.app/'
     },
     {
-        image:project1,
-        name:"My hero",
+        image:tours,
+        name:"Tours",
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fuga mollitia, unde facilis voluptates ea quos sapiente commodi exercitationem.',
-        githubLinnk:'jjj',
+        githubLinnk:'https://github.com/Walexz01/Tours',
+        siteLink:'https://tours-walexz01.vercel.app/'
     },
 
     {
-        image:project1,
-        name:"hero back",
+        image:fifash,
+        name:"FIFASH ",
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fuga mollitia, unde facilis voluptates ea quos sapiente commodi exercitationem.',
-        githubLinnk:'jjj',
-        siteLink:'jjhj'
+        githubLinnk:'https://github.com/Walexz01/FiFash',
+        siteLink:'https://fi-fash.vercel.app/'
     },
     {
-        image:project1,
-        name:"My hero",
+        image:trippy,
+        name:"Trippy",
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fuga mollitia, unde facilis voluptates ea quos sapiente commodi exercitationem.',
-        githubLinnk:'jjj',
+        githubLinnk:'https://github.com/Walexz01/Trippy',
+        siteLink:'https://trippy-rho.vercel.app/'
+
     },
 
 ]

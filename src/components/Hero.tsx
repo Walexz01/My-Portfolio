@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         {/* ============== left ends ======== */}
-        <div className="hero__right">
+        <div className="hero__right" data-aos="fade-in">
           <img src={hero__img} alt="" />
         </div>
       </div>

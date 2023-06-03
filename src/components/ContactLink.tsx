@@ -6,7 +6,9 @@ const Contactlink = ({ icon: Icon, title, href, value }: contact) => {
       {<Icon />}
       <h3>{title}:</h3>
       <span>
-        <a href={href}>{value}</a>
+        <a target="blank" href={href}>
+          {value}
+        </a>
       </span>
     </div>
   );

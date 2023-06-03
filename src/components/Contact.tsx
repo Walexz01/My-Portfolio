@@ -1,36 +1,28 @@
 import Heading from "./Heading";
+import emailjs from "@emailjs/browser";
 import { BsFillSendFill } from "react-icons/bs";
-import { useState } from "react";
 import { lists } from "../Data/contacts";
 import Contactlink from "./ContactLink";
 
-interface UserInput {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-type input_event =
-  | React.ChangeEvent<HTMLInputElement>
-  | React.ChangeEvent<HTMLTextAreaElement>;
-
 const Contact = () => {
-  const [input, setinput] = useState<UserInput>({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleInput = (e: input_event) => {
-    setinput({ ...input, [e.target.name]: e.target.value });
-  };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(input);
-    console.log("submitted");
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_APP_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.currentTarget,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.currentTarget.reset();
   };
   return (
     <section className="contact__section" id="contact">
@@ -45,39 +37,31 @@ const Contact = () => {
             <h2 className="gradient__text contact__head">Start by saying hi</h2>
             <form onSubmit={handleSubmit} className="contact__form">
               <input
-                value={input.name}
                 type="text"
                 placeholder="Your Name"
                 className="input"
-                name="name"
-                onChange={(e) => handleInput(e)}
+                name="user_name"
                 required
               />
               <input
-                value={input.email}
                 type="email"
                 placeholder="Your Email"
                 className="input"
-                name="email"
-                onChange={(e) => handleInput(e)}
+                name="user_email"
                 required
               />
               <input
-                value={input.subject}
                 type="text"
                 name="subject"
                 placeholder="Subject"
                 className="input"
-                onChange={(e) => handleInput(e)}
                 required
               />
               <textarea
-                value={input.message}
                 name="message"
                 id="message"
                 placeholder="Your Message"
                 required
-                onChange={(e) => handleInput(e)}
               />
               <button className="send__btn btn color__hover__btn">
                 <BsFillSendFill /> Send Message
@@ -89,10 +73,11 @@ const Contact = () => {
               Let's make something amazing together.
             </h2>
             <p className="contact__intro">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
-              porro perspiciatis velit quis obcaecati aperiam sed temporibus
-              facilis voluptas tenetur! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Aliquam, aut!
+              Interested in working together? I'm always open to discussing web
+              development work or partnership opportunities, don’t hesitate to
+              reach out. The goal is to engage in a conversation that leads to a
+              fruitful partnership and a tailored solution to our specific needs
+              ❤️.
             </p>
 
             <div className="contact__links">
