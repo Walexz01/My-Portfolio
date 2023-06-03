@@ -16,7 +16,11 @@ const Navbar = () => {
           </AnchorLink>
           <ul className={isNavOpen ? "nav__links open" : "nav__links"}>
             {Links.map(({ id, name }) => (
-              <li className="nav__link" key={id}>
+              <li
+                onClick={() => setIsNavOpen(false)}
+                className="nav__link"
+                key={id}
+              >
                 <Anchor id={id} name={name} />
               </li>
             ))}

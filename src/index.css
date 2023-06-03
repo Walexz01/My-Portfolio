@@ -497,7 +497,7 @@ padding-top: .3rem;
   }
   .nav__links{
     flex-direction: column;
-    background-color: rgb(32, 33, 36);
+    background-color: var(--color__l_black);
     position: absolute;
     right: 0;
     top: 100%;
