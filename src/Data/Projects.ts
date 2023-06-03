@@ -1,11 +1,9 @@
-import project1 from '../assets/localhost_5173_ (1).png'
 import piggyvest from '../assets/Projects/piggyvest.png'
 import herobank from '../assets/Projects/herosbanks.png'
 import corelink from '../assets/Projects/corelink.png'
 import tours from '../assets/Projects/tours.png'
 import fifash from '../assets/Projects/fifash.png'
 import trippy from '../assets/Projects/trippy.png'
-import foodarena from '../assets/Projects/foodarena.png'
 
 export interface Project {
     image: string;

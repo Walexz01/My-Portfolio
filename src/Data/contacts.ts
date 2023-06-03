@@ -5,7 +5,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { IconType } from "react-icons";
-import { ReactNode } from "react";
 
 export interface contact{
     icon: IconType;
