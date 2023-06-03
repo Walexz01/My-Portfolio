@@ -1,4 +1,6 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import hero__img from "../assets/IMG_i8ax5q-PhotoRoom.png";
+
 const Hero = () => {
   return (
     <section className="hero__section" id="home">
@@ -16,10 +18,12 @@ const Hero = () => {
             </div>
             <div className="ctns">
               <button className="btn__colored btn">
-                <a href=""> Get In Touch</a>
+                <AnchorLink href="#contact"> Get In Touch</AnchorLink>
               </button>
               <button className="color__hover__btn btn">
-                <a href="">View All Works</a>
+                <a href="https://github.com/Walexz01?tab=repositories">
+                  View All Works
+                </a>
               </button>
             </div>
           </div>
