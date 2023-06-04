@@ -22,24 +22,6 @@ const About = () => {
               {descs.map((desc, index) => (
                 <p key={index}>{desc}</p>
               ))}
-              <div className="details__container">
-                <div className="details__left">
-                  {details_1.map(({ key, value }, index) => (
-                    <div className="detail" key={index}>
-                      <h3>{key}:</h3>
-                      <span>{value}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="details__right">
-                  {details_2.map(({ key, value }, index) => (
-                    <div className="detail" key={index}>
-                      <h3>{key}:</h3>
-                      <span>{value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
               <div className="cv__link">
                 <a href={cv} download className="btn btn__colored">
                   <FaCloudDownloadAlt /> Downlod My CV

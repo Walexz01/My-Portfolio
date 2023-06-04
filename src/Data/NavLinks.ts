@@ -5,10 +5,6 @@ interface link{
 }
 export const Links:link[] =[
     {
-        id:'home',
-        name:'Home'
-    },
-    {
         id:'about',
         name:'About'
     },
@@ -17,12 +13,8 @@ export const Links:link[] =[
         name:'Services'
     },
     {
-        id:'projects',
-        name:'Projects'
-    },
-    {
         id:'contact',
-        name:'contact'
+        name:'Contact'
     }
 
 ]
