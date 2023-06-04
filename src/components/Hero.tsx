@@ -1,5 +1,5 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import hero__img from "../assets/IMG_i8ax5q-PhotoRoom.png";
+import hero__img from "../assets/adewale-image.png";
 import Anchor from "./Anchor";
 
 const Hero = () => {
