@@ -11,7 +11,7 @@ HTML5,CSS,JavaScript,React,Typescript
 To get started with working with this repo, you'll need to install Node.js and npm on your machine. Then, you can clone this repository and install the dependencies:
 
 ```
-git clone https://github.com/your-username/My-Portfolio.git
+git clone git clone git@github.com:Walexz01/My-Portfolio.git
 cd My-Portfolio
 npm install
 ```
