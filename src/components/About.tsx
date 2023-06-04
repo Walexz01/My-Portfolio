@@ -1,4 +1,4 @@
-import { descs, details_1, details_2 } from "../Data/About";
+import { descs } from "../Data/About";
 import about_image from "../assets/IMG_20220514_074006.jpg";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Heading from "./Heading";
