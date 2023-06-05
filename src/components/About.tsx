@@ -1,4 +1,4 @@
-import { descs, details_1, details_2 } from "../Data/About";
+import { descs } from "../Data/About";
 import about_image from "../assets/IMG_20220514_074006.jpg";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Heading from "./Heading";
@@ -22,24 +22,6 @@ const About = () => {
               {descs.map((desc, index) => (
                 <p key={index}>{desc}</p>
               ))}
-              <div className="details__container">
-                <div className="details__left">
-                  {details_1.map(({ key, value }, index) => (
-                    <div className="detail" key={index}>
-                      <h3>{key}:</h3>
-                      <span>{value}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="details__right">
-                  {details_2.map(({ key, value }, index) => (
-                    <div className="detail" key={index}>
-                      <h3>{key}:</h3>
-                      <span>{value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
               <div className="cv__link">
                 <a href={cv} download className="btn btn__colored">
                   <FaCloudDownloadAlt /> Downlod My CV

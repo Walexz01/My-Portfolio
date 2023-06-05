@@ -1,5 +1,6 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import hero__img from "../assets/IMG_i8ax5q-PhotoRoom.png";
+import hero__img from "../assets/adewale-image.png";
+import Anchor from "./Anchor";
 
 const Hero = () => {
   return (
@@ -9,21 +10,18 @@ const Hero = () => {
         <div className="hero__left">
           <div className="hero__contents">
             <h2 className="hero__greeting">
-              Hello, <span className="name gradient__text">I'm Adewale,</span>
+              Hello, <span className="name gradient__text">I'm Adewale,</span> a
               Web Developer based in Nigeria.
             </h2>
             <div className="little__intro">
-              I am web developer with 1 year experience,in this 1 year i have
-              worked on some personnal projects.
+              I have over a year of experience building websites and web apps.
             </div>
             <div className="ctns">
               <button className="btn__colored btn">
                 <AnchorLink href="#contact"> Get In Touch</AnchorLink>
               </button>
               <button className="color__hover__btn btn">
-                <a href="https://github.com/Walexz01?tab=repositories">
-                  View All Works
-                </a>
+                <Anchor id="services" name="My Services" />
               </button>
             </div>
           </div>
