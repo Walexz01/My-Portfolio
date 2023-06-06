@@ -30,7 +30,7 @@ For local development, you can use a `.env` file to declare the needed variable:
 
 ## 🛳 Production
 
-To create a production build, run from the root of the project:
+To create a production build, run from the root of the project which will create a dist folder in the project :
 
 ```
 npm run build
