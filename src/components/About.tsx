@@ -1,8 +1,8 @@
 import { descs } from "../Data/About";
-import about_image from "../assets/IMG_20220514_074006.jpg";
+import about_image from "../assets/walexz.jpg";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Heading from "./Heading";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/Adewale CV.pdf";
 const About = () => {
   return (
     <section className="about__section" id="about">
