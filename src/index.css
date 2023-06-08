@@ -184,9 +184,12 @@ section{
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+.about__left{
+  display: grid;
+}
 .about__left img{
-  width: 100%;
-  height: 80%;
+  height: 70%;
+  width: 80%;
 }
 .about__right{
 padding-top: .5rem;
