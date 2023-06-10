@@ -1,6 +1,6 @@
-import github from "../assets/github.png";
-import coding from "../assets/coding.png";
+import testing from "../assets/magnifying.png";
 import reponsiveness from "../assets/phone_laptop_filled_icon_200393.png";
+import WordPress from "../assets/wordPressLogo.png";
 
 interface Services{
     image:string,
@@ -9,18 +9,18 @@ interface Services{
 }
 export const services:Services[] =[
     {
-        image:github,
-        heading:"Version Control System",
-        desc:"With the use of version control sytems(Git) and hosting services (GitHub), I can manage your website after deploments and make any updates when needed."
-    },
-    {
-        image:coding,
-        heading:"Frontend Web Dev.",
-        desc:"I make use of HTML, CSS, JavScriptand React to make interactive and functional frontend framework for businesses or other purposes."
-    },
-    {
         image:reponsiveness,
-        heading:"Responsive design",
-        desc:"Making websites change dynamically depending on screen size and viewport ranging from laptop to tablets and mobile phones."
+        heading:"Frontend Web Development ",
+        desc:"I use HTML, CSS, and JavaScript (ReactJs) to make interactive and functional web apps."
+    },
+    {
+        image:WordPress,
+        heading:"WordPress Websites",
+        desc:"I use WordPress to build marketing websites for people, and businesses."
+    },
+    {
+        image:testing,
+        heading:"Quality Assurance Testing",
+        desc:"I use a tools, processes and manual testing to ensure the quality of websites and apps"
     },
 ]

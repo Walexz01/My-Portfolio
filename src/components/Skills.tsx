@@ -3,7 +3,7 @@ import Heading from "./Heading";
 
 const Skills = () => {
   return (
-    <section className="skills__section">
+    <section className="skills__section" id="skills">
       <div className="container skill__container">
         <Heading
           classname="skills__heading"

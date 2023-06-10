@@ -244,7 +244,7 @@ padding-top: .5rem;
   background-color: white;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
-  border: 2px solid #9b2226 ;
+  border: 2px solid transparent ;
   transition: all .5s ease-in;
 }
 .service:hover{

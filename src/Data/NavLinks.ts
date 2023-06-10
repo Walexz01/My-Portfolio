@@ -9,6 +9,10 @@ export const Links:link[] =[
         name:'About'
     },
     {
+        id:'skills',
+        name:'Skills'
+    },
+    {
         id:'services',
         name:'Services'
     },
