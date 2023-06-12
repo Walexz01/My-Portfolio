@@ -58,7 +58,7 @@ async function createServer() {
       next(e)
     }
   })
-  app.listen(5173)
+  app.listen(process.env.PORT | 5173)
 }
 
 createServer()
