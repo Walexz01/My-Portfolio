@@ -4,8 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node server",
+    "build": "tsc && npm run build:client && npm run build:server",
+    "build:client": "tsc && vite build --outDir dist/client",
+    "build:server": "tsc && vite build --ssr src/entry-server.tsx --outDir dist/server",
+    "serve": "NODE_ENV=production node server",
+    "debug": "node --inspect-brk server",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,10 +18,15 @@
     "@types/dotenv": "^8.2.0",
     "@types/node": "^20.2.5",
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",
+    "add": "^2.0.6",
+    "h3": "^1.6.6",
+    "listhen": "^1.0.4",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0"
+    "react-icons": "^4.9.0",
+    "react-router-dom": "^6.12.1",
+    "sirv": "^2.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
