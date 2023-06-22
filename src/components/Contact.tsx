@@ -3,8 +3,12 @@ import emailjs from "@emailjs/browser";
 import { BsFillSendFill } from "react-icons/bs";
 import { lists } from "../Data/contacts";
 import Contactlink from "./ContactLink";
+import { useState } from "react";
+import Sentfeedback from "./Sentfeedback";
+import Errrorfeedback from "./Errrorfeedback";
 
 const Contact = () => {
+  const [isEmailsent, setIsEmailsent] = useState("");
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs
@@ -16,9 +20,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setIsEmailsent("sent");
           console.log(result.text);
         },
         (error) => {
+          setIsEmailsent("error");
+
           console.log(error.text);
         }
       );
@@ -35,6 +42,11 @@ const Contact = () => {
         <div className="contact__bottom">
           <div className="contact__form__container">
             <h2 className="gradient__text contact__head">Start by saying hi</h2>
+            {isEmailsent === "sent" ? (
+              <Sentfeedback />
+            ) : isEmailsent === "error" ? (
+              <Errrorfeedback />
+            ) : null}
             <form onSubmit={handleSubmit} className="contact__form">
               <input
                 type="text"

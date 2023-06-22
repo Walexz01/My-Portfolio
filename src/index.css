@@ -373,7 +373,20 @@ padding-top: .5rem;
 .contact_link span a{
   color: #bfbec2;
 }
+.feedback{
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 0 .5rem 0;
+  font-size: 1.2rem;
+  gap: .3rem;
+}
+.sent__feedback{
+  color: green;
 
+}
+.erroor__feedback{
+  color: red;
+}
 /* ======================= Footer ================= */
 .footer__container{
   text-align: center;
