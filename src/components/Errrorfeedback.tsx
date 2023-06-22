@@ -4,7 +4,7 @@ const Errrorfeedback = () => {
   return (
     <span className="feedback erroor__feedback">
       <AiFillCloseCircle />
-      an error occur, please try resending the message
+      An error occurred. Please check the form and try again.
     </span>
   );
 };

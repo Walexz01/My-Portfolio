@@ -4,7 +4,7 @@ const Sentfeedback = () => {
   return (
     <span className="feedback sent__feedback">
       <IoMdCheckmarkCircle />
-      Thanks for contacting me. I'll get back to I as soon as possible.
+      Thanks for contacting me. I'll get back to you as soon as possible.
     </span>
   );
 };
