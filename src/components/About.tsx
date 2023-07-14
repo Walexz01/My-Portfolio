@@ -13,9 +13,7 @@ const About = () => {
           desc="Main informations about me"
         />
         <div className="about__contents">
-          <div className="about__left">
-            <img src={about_image} alt="" />
-          </div>
+          <div className="about__left"></div>
           <div className="about__right">
             <div className="about__right--content">
               <h3>Hello, I'm Adewale Adegbite, Based in Nigeria</h3>

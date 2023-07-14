@@ -15,7 +15,7 @@ export const services:Services[] =[
     },
     {
         image:WordPress,
-        heading:"WordPress Websites",
+        heading:"WordPress Websites Development",
         desc:"I use WordPress to build marketing websites for people, and businesses."
     },
     {
