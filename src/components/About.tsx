@@ -1,5 +1,4 @@
 import { descs } from "../Data/About";
-import about_image from "../assets/RaLxOxg8.jpg";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Heading from "./Heading";
 import cv from "../assets/Adewale CV.pdf";
