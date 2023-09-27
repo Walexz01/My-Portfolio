@@ -13,6 +13,10 @@ export const Links:link[] =[
         name:'Skills'
     },
     {
+        id:'projects',
+        name:'Projects'
+    },
+    {
         id:'services',
         name:'Services'
     },
