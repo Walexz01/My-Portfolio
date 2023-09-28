@@ -6,10 +6,10 @@
 }
 
 :root {
-  --color__primary: #E21143;
-  --color__secondary: #FFB03A;
+  --color__primary: #e21143;
+  --color__secondary: #ffb03a;
   --color__l_black: #001219;
-  --color__black-100: #343a40
+  --color__black-100: #343a40;
 }
 
 h1,
@@ -19,16 +19,16 @@ h4,
 h5,
 h6 {
   color: var(--color__l_black);
-  font-family: 'Lato', sans-serif;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 p,
 span {
   color: var(--color__black-100);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.3;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.3;
 }
 
@@ -36,7 +36,7 @@ a {
   text-decoration: none;
   color: 001219;
   font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #001219;
 }
 
@@ -71,7 +71,7 @@ section {
 
 .nav__container {
   width: 80%;
-  padding: 1rem .7rem;
+  padding: 1rem 0.7rem;
 }
 
 .nav__items {
@@ -86,7 +86,7 @@ section {
 }
 
 .sub {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--color__secondary);
 }
 
@@ -98,7 +98,6 @@ section {
 
 .nav__link a {
   color: whitesmoke;
-
 }
 
 .nav__link a:hover {
@@ -120,7 +119,7 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 
   padding: 3rem 0 1rem 0;
 }
@@ -135,7 +134,11 @@ section {
 }
 
 .gradient__text {
-  background: linear-gradient(60deg, var(--color__primary), var(--color__secondary));
+  background: linear-gradient(
+    60deg,
+    var(--color__primary),
+    var(--color__secondary)
+  );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -152,24 +155,23 @@ section {
 }
 
 .btn {
-  padding: .7rem 2rem;
+  padding: 0.7rem 2rem;
   border-radius: 1.2rem;
   outline: none;
   font-size: 1rem;
   white-space: nowrap;
   background-color: white;
 
-  margin-right: .4rem;
+  margin-right: 0.4rem;
   border: 1px solid var(--color__l_black);
   display: inline-flex;
   align-items: center;
-  gap: .4rem;
+  gap: 0.4rem;
 }
 
 .btn a {
   color: var(--color__l_black);
   font-weight: 600;
-
 }
 
 .btn svg {
@@ -179,8 +181,7 @@ section {
 .btn__colored {
   background: linear-gradient(var(--color__primary), var(--color__secondary));
   border: 1px solid white;
-  transition: all .5s ease-in;
-
+  transition: all 0.5s ease-in;
 }
 
 .btn__colored:hover {
@@ -191,8 +192,7 @@ section {
 .color__hover__btn:hover {
   background: linear-gradient(var(--color__primary), var(--color__secondary));
   border: 1px solid white;
-  transition: all .5s ease-in;
-
+  transition: all 0.5s ease-in;
 }
 
 .hero__right img {
@@ -208,14 +208,13 @@ section {
 
 .heading h2 {
   font-size: 2.7rem;
-  padding-bottom: .7rem;
-  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 0.7rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .heading p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
-
 }
 
 .about__contents {
@@ -234,7 +233,7 @@ section {
 }
 
 .about__right {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .about__right--content h3 {
@@ -243,7 +242,7 @@ section {
 
 .about__contents p {
   font-size: 1.2rem;
-  padding: .5rem 0 .7rem 0;
+  padding: 0.5rem 0 0.7rem 0;
 }
 
 .details__container {
@@ -258,8 +257,8 @@ section {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 0 0 .8rem 0;
-  gap: .3rem;
+  margin: 0 0 0.8rem 0;
+  gap: 0.3rem;
 }
 
 .about__left {
@@ -290,7 +289,6 @@ section {
 /* ===================== services section ======================= */
 .services__section {
   background: var(--color__l_black);
-  ;
 }
 
 .services {
@@ -307,7 +305,7 @@ section {
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   border: 2px solid transparent;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .service:hover {
@@ -320,7 +318,7 @@ section {
 }
 
 .service__heading {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.4rem;
   line-height: 1.3;
 }
@@ -344,7 +342,9 @@ section {
   overflow: hidden;
   padding-bottom: 1rem;
   box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.75);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projects__card img {
@@ -357,10 +357,9 @@ section {
 
 .project__name {
   font-size: 1.4rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   color: #fafaff;
   font-family: cursive;
-
 }
 
 .project__about {
@@ -372,7 +371,7 @@ section {
 .project__action__btn {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 0 1rem;
 }
 
@@ -383,7 +382,6 @@ section {
 .visit__btn:hover a,
 .visit__btn:hover svg {
   color: var(--color__l_black);
-
 }
 
 /*=====================  contact section ================== */
@@ -421,7 +419,6 @@ section {
 
 .contact__heading p {
   color: white;
-
 }
 
 .contact__bottom {
@@ -436,7 +433,7 @@ section {
 }
 
 .contact__intro {
-  padding: .6rem 0;
+  padding: 0.6rem 0;
   font-size: 1.1rem;
   color: white;
 }
@@ -446,12 +443,12 @@ section {
 }
 
 .contact_link {
-  padding-bottom: .7rem;
+  padding-bottom: 0.7rem;
 }
 
 .contact_link svg {
   color: #9b2226;
-  padding-right: .2rem;
+  padding-right: 0.2rem;
 }
 
 .contact_link h3 {
@@ -465,14 +462,13 @@ section {
 .feedback {
   display: flex;
   align-items: flex-start;
-  padding: 1rem 0 .5rem 0;
+  padding: 1rem 0 0.5rem 0;
   font-size: 1.2rem;
-  gap: .3rem;
+  gap: 0.3rem;
 }
 
 .sent__feedback {
   color: green;
-
 }
 
 .erroor__feedback {
@@ -504,24 +500,20 @@ section {
 .bottom__nav__link a {
   color: #001219;
   font-size: 1.4rem;
-
 }
 
 .bottom__nav__link a:hover {
   color: var(--color__secondary);
-
 }
 
 .end {
   font-size: 1.5rem;
   color: #001219;
-  font-family: 'Ubuntu', sans-serif;
-
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* ============= media query for 1024px screen =============== */
-@media (max-width : 1024px) {
-
+@media (max-width: 1024px) {
   /* =========== aboutt section ============ */
   .heading {
     padding-bottom: 1.5rem;
@@ -529,7 +521,7 @@ section {
 
   .heading h2 {
     font-size: 2.4rem;
-    padding-bottom: .4rem;
+    padding-bottom: 0.4rem;
   }
 
   .heading p {
@@ -548,7 +540,7 @@ section {
   }
 
   .about__right {
-    padding-top: .3rem;
+    padding-top: 0.3rem;
   }
 
   .about__right--content h3 {
@@ -564,14 +556,14 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: center;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .detail {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .detail h3 {
@@ -593,7 +585,7 @@ section {
   }
 
   .service__heading {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
   }
 
@@ -608,13 +600,12 @@ section {
   }
 
   .project__details {
-    padding: .5rem 0 .7rem .7rem;
+    padding: 0.5rem 0 0.7rem 0.7rem;
   }
 
   .project__name {
     font-size: 1.3rem;
-    padding-bottom: .2rem;
-
+    padding-bottom: 0.2rem;
   }
 
   .project__about {
@@ -622,15 +613,12 @@ section {
   }
 
   .project__action__btn {
-    padding: 0 .7rem;
+    padding: 0 0.7rem;
   }
-
-
-
 }
 
 /* ============= media query for 768px screen =============== */
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   section {
     padding: 3rem 1rem;
   }
@@ -642,7 +630,7 @@ section {
   /* ================= NAvBar style ==================== */
   .nav__container {
     width: 90%;
-    padding: .7rem .5rem;
+    padding: 0.7rem 0.5rem;
   }
 
   .nav__logo {
@@ -662,7 +650,6 @@ section {
     justify-content: center;
     font-size: 1.3rem;
     display: none;
-
   }
 
   .nav__link {
@@ -671,9 +658,8 @@ section {
     padding: 1rem;
     border-radius: 2rem;
     text-align: center;
-    transition: all .5s ease-in;
-    margin: .2rem 0;
-
+    transition: all 0.5s ease-in;
+    margin: 0.2rem 0;
   }
 
   .nav__link:hover {
@@ -732,7 +718,7 @@ section {
 
   .heading h2 {
     font-size: 2rem;
-    padding-bottom: .3rem;
+    padding-bottom: 0.3rem;
   }
 
   .heading p {
@@ -759,16 +745,16 @@ section {
 
   .about__contents p {
     font-size: 1.1rem;
-    padding: .3rem 0 .5rem 0;
+    padding: 0.3rem 0 0.5rem 0;
   }
 
   .details__container {
     grid-template-columns: 1fr 1fr;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .detail {
-    margin: 0 0 .5rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .detail h3 {
@@ -785,12 +771,12 @@ section {
   }
 
   .project__details {
-    padding: .3rem 0 1rem .5rem;
+    padding: 0.3rem 0 1rem 0.5rem;
   }
 
   .project__name {
     font-size: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .project__about {
@@ -800,14 +786,13 @@ section {
   .project__action__btn {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
-    padding: 0 .5rem;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
   }
-
 
   /*=====================  contact section ================== */
   .contact__form {
-    padding: 1rem .2rem;
+    padding: 1rem 0.2rem;
     gap: 1rem;
   }
 
@@ -832,11 +817,11 @@ section {
   }
 
   .contact__links {
-    padding: .7rem 0;
+    padding: 0.7rem 0;
   }
 
   .contact_link {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .send__btn {
@@ -854,20 +839,16 @@ section {
 
   .bottom__nav__link a {
     font-size: 1.2rem;
-
   }
 
   .end {
     font-size: 1.2rem;
     color: #001219;
   }
-
-
 }
 
-
 /* ============= media query for 600px screen =============== */
-@media (max-width : 600px) {
+@media (max-width: 600px) {
   section {
     padding: 4rem 1rem;
   }
@@ -909,7 +890,7 @@ section {
   }
 
   .btn {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-right: 0rem;
   }
 
@@ -919,12 +900,12 @@ section {
 
   /* =========== about section ============ */
   .heading {
-    padding-bottom: .7rem;
+    padding-bottom: 0.7rem;
   }
 
   .heading h2 {
     font-size: 1.7rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .heading p {
@@ -938,17 +919,17 @@ section {
 
   .about__contents p {
     font-size: 1.2rem;
-    padding: .3rem 0 .4rem 0;
+    padding: 0.3rem 0 0.4rem 0;
   }
 
   .details__container {
     grid-template-columns: 1fr;
-    gap: .5rem;
-    padding-bottom: .5rem;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .detail {
-    margin: 0 0 .7rem 0;
+    margin: 0 0 0.7rem 0;
   }
 
   .detail h3 {
@@ -962,7 +943,7 @@ section {
   /* ===================== services section ======================= */
   .services {
     gap: 2rem;
-    grid-template-columns: .9fr;
+    grid-template-columns: 0.9fr;
   }
 
   .service {
@@ -985,13 +966,12 @@ section {
   }
 
   .project__details {
-    padding: 1rem 0 1rem .7rem;
+    padding: 1rem 0 1rem 0.7rem;
   }
 
   .project__name {
     font-size: 1.2rem;
-    padding-bottom: .3rem;
-
+    padding-bottom: 0.3rem;
   }
 
   .project__about {
@@ -999,7 +979,7 @@ section {
   }
 
   .project__action__btn {
-    padding: 0 .7rem;
+    padding: 0 0.7rem;
   }
 
   /* ======================= Footer ================= */
@@ -1018,15 +998,9 @@ section {
 
   .bottom__nav__link a {
     font-size: 1.2rem;
-
   }
 
   .end {
     font-size: 1.2rem;
   }
-
-
-
-
-
 }

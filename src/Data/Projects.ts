@@ -18,13 +18,13 @@ export const projects:Project[]=[
     {
         image:ganleytax,
         name:"Ganley Tax",
-        details: 'This is a wordpress site built for Ganley tax & accounting, it has pages like the services, about,contact and others pages, and it is responsive',
+        details: "Presenting Ganley Tax & Accounting's responsive WordPress site. Showcasing services, an informative about section, and easy contact options for a seamless user experience.",
         siteLink:'https://www.ganleytax.com/'
     },
     {
         image:araismesi,
         name:"Araismesi",
-        details: 'This is a wo-commerce website built for Araisme Cakes and events Decor, it has pages like About,Gallery,Events,the shop page,checkout and other pages ',
+        details: "Introducing ARA ISMESI Cakes and Events Decor's WooCommerce website. Featuring an About section, Gallery, Events, Shop, and seamless Checkout for an enjoyable user experience.",
         siteLink:'https://www.araismesi.com/'
     },
     // {

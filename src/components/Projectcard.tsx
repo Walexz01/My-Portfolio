@@ -11,10 +11,12 @@ const Projectcard = ({
 }: Project) => {
   return (
     <div className="projects__card">
-      <img src={image} alt="" />
-      <div className="project__details">
-        <h3 className="project__name ">{name}</h3>
-        <p className="project__about">{details}</p>
+      <div className="card_content">
+        <img src={image} alt="" />
+        <div className="project__details">
+          <h3 className="project__name ">{name}</h3>
+          <p className="project__about">{details}</p>
+        </div>
       </div>
       <div className="project__action__btn ">
         {githubLinnk && (
