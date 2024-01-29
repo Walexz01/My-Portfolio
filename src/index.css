@@ -374,7 +374,11 @@ section {
   gap: 0.5rem;
   padding: 0 1rem;
 }
-
+.project_button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
 .visit__btn:hover {
   background-color: white;
 }
